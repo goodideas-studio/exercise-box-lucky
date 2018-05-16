@@ -5,5 +5,7 @@
  2. 整合上遇到的問題：
  不知道storyboard有沒有辦法直接拿對方的來使用（因為有outlet、Action連線問題）？自己的處理是參考對方的storyboard笨笨的一個一個元件重拉，但感覺應該有好的解法。
  有時候單純看別人的code無法了解透過詢問對方了解他code的邏輯思維。
+ 
+ 
 ![Game1.gif](Game1.gif)
 ![Game2.gif](Game2.gif)
