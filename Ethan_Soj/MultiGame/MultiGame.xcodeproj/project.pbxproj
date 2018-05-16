@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D66F9C5920ABC26000E2C0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C5820ABC26000E2C0AC /* AppDelegate.swift */; };
-		D66F9C5B20ABC26000E2C0AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C5A20ABC26000E2C0AC /* ViewController.swift */; };
+		D66F9C5B20ABC26000E2C0AC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C5A20ABC26000E2C0AC /* MenuViewController.swift */; };
 		D66F9C5E20ABC26000E2C0AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66F9C5C20ABC26000E2C0AC /* Main.storyboard */; };
 		D66F9C6020ABC26100E2C0AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66F9C5F20ABC26100E2C0AC /* Assets.xcassets */; };
 		D66F9C6320ABC26100E2C0AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66F9C6120ABC26100E2C0AC /* LaunchScreen.storyboard */; };
 		D66F9C6B20ABC3CB00E2C0AC /* Game1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C6A20ABC3CB00E2C0AC /* Game1ViewController.swift */; };
 		D66F9C6D20ABC3F200E2C0AC /* Game2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C6C20ABC3F200E2C0AC /* Game2ViewController.swift */; };
+		D66F9C7020ABCFC200E2C0AC /* drinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C6F20ABCFC200E2C0AC /* drinkButtonStyle.swift */; };
+		D66F9C7320ABD34300E2C0AC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C7220ABD34300E2C0AC /* Order.swift */; };
+		D66F9C7520ABD58D00E2C0AC /* MenuBalckViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C7420ABD58D00E2C0AC /* MenuBalckViewStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D66F9C5520ABC26000E2C0AC /* MultiGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66F9C5820ABC26000E2C0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D66F9C5A20ABC26000E2C0AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D66F9C5A20ABC26000E2C0AC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D66F9C5D20ABC26000E2C0AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D66F9C5F20ABC26100E2C0AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D66F9C6220ABC26100E2C0AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D66F9C6420ABC26100E2C0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D66F9C6A20ABC3CB00E2C0AC /* Game1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game1ViewController.swift; sourceTree = "<group>"; };
 		D66F9C6C20ABC3F200E2C0AC /* Game2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2ViewController.swift; sourceTree = "<group>"; };
+		D66F9C6F20ABCFC200E2C0AC /* drinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkButtonStyle.swift; sourceTree = "<group>"; };
+		D66F9C7220ABD34300E2C0AC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D66F9C7420ABD58D00E2C0AC /* MenuBalckViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBalckViewStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +65,42 @@
 			isa = PBXGroup;
 			children = (
 				D66F9C5820ABC26000E2C0AC /* AppDelegate.swift */,
-				D66F9C5A20ABC26000E2C0AC /* ViewController.swift */,
-				D66F9C6A20ABC3CB00E2C0AC /* Game1ViewController.swift */,
-				D66F9C6C20ABC3F200E2C0AC /* Game2ViewController.swift */,
+				D66F9C7620ABD7C500E2C0AC /* Model */,
+				D66F9C7120ABCFC600E2C0AC /* View */,
+				D66F9C6E20ABC78200E2C0AC /* Controllers */,
 				D66F9C5C20ABC26000E2C0AC /* Main.storyboard */,
 				D66F9C5F20ABC26100E2C0AC /* Assets.xcassets */,
 				D66F9C6120ABC26100E2C0AC /* LaunchScreen.storyboard */,
 				D66F9C6420ABC26100E2C0AC /* Info.plist */,
 			);
 			path = MultiGame;
+			sourceTree = "<group>";
+		};
+		D66F9C6E20ABC78200E2C0AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D66F9C5A20ABC26000E2C0AC /* MenuViewController.swift */,
+				D66F9C6A20ABC3CB00E2C0AC /* Game1ViewController.swift */,
+				D66F9C6C20ABC3F200E2C0AC /* Game2ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D66F9C7120ABCFC600E2C0AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D66F9C6F20ABCFC200E2C0AC /* drinkButtonStyle.swift */,
+				D66F9C7420ABD58D00E2C0AC /* MenuBalckViewStyle.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D66F9C7620ABD7C500E2C0AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D66F9C7220ABD34300E2C0AC /* Order.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D66F9C5B20ABC26000E2C0AC /* ViewController.swift in Sources */,
+				D66F9C7520ABD58D00E2C0AC /* MenuBalckViewStyle.swift in Sources */,
+				D66F9C7320ABD34300E2C0AC /* Order.swift in Sources */,
+				D66F9C5B20ABC26000E2C0AC /* MenuViewController.swift in Sources */,
 				D66F9C6B20ABC3CB00E2C0AC /* Game1ViewController.swift in Sources */,
 				D66F9C5920ABC26000E2C0AC /* AppDelegate.swift in Sources */,
+				D66F9C7020ABCFC200E2C0AC /* drinkButtonStyle.swift in Sources */,
 				D66F9C6D20ABC3F200E2C0AC /* Game2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
