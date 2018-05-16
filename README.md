@@ -42,5 +42,6 @@ Jeremy / Iris / Ells / Gavin / 菘駿 / Morris / Ethan / Sonny
 - 可以選擇你的遊戲和朋友的遊戲。
 - 為你的遊戲和朋友的遊戲取一個名字。
 - 畫面需要顯示「遊戲 icon」、「遊戲名稱」、「玩了幾次」、「歷史最高分」
--  deadline 16:00 
+- 整合的過程記錄一切你碰到的難題。
+- deadline 16:00 
 
