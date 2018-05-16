@@ -16,13 +16,22 @@ class GameVC: UIViewController {
     var time = 20
     var countdownTimer: Timer!
     
+    
+    
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var resultView: UIView!
     @IBOutlet weak var tableView: UIImageView!
     @IBOutlet weak var scoreView: UIView!
+    @IBOutlet weak var finalScoreLabel: UILabel!
     
     @IBAction func resultConfirmBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        GameRecord.shared.pokerGamePlay += 1
+        print(GameRecord.shared.pokerGamePlay)
+        if gamerChips > GameRecord.shared.pokerMaxScore {
+            GameRecord.shared.pokerMaxScore = gamerChips
+        }
+        print(GameRecord.shared.pokerMaxScore)
     }
     
     func secondInning(){
@@ -106,17 +115,22 @@ class GameVC: UIViewController {
     @IBOutlet weak var gamerChipsLabel: UILabel!
     
     var gamerChips = 100 {
-        
+    
         didSet {
             gamerChipsLabel.text = "\(gamerChips)"
-            if gamerChips < 100 && gamerChips != 0{
+            finalScoreLabel.text = "\(gamerChips)"
+            if gamerChips <= 100 && gamerChips != 0 {
                 gamblingChipsImage.image = UIImage(named: "icons8-chip")
+
             }
+                
             else if gamerChips > 100 {
                 gamblingChipsImage.image = UIImage(named: "icons8-roulette_chips")
             }
-            else if gamerChips == 0{
+                
+            else if gamerChips == 0 {
                 gamblingChipsImage.image = UIImage(named: " ")
+                endTimer()
                 resultView.isHidden = false
                 tableView.isUserInteractionEnabled = false
 
@@ -152,6 +166,7 @@ class GameVC: UIViewController {
     func dealCard() {
         
         dealBtnOutlet.isEnabled = false
+        
         print(cardList)
         bankerCard = Int(arc4random_uniform(UInt32(cardList.count)))
         print("莊家點數：\(bankerCard + 1)")
@@ -209,6 +224,21 @@ class GameVC: UIViewController {
         }
     }
     
+    //時間到出分數
+    func callResult() {
+        
+              //  gamblingChipsImage.image = UIImage(named: "icons8-chip")
+                scoreView.isHidden = false
+                tableView.isUserInteractionEnabled = false
+                UIView.animate(withDuration: 1, delay: 0, options: .curveEaseIn, animations: {
+                    
+                    self.scoreView.frame.origin.y = UIScreen.main.bounds.height / 2 - (self.scoreView.bounds.height / 2)
+                    
+                }, completion: nil)
+        
+        
+    }
+    
     //計時器
     func startTimer() {
         countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
@@ -220,6 +250,7 @@ class GameVC: UIViewController {
             time -= 1
         } else {
             endTimer()
+            callResult()
         }
     }
     
@@ -233,6 +264,7 @@ class GameVC: UIViewController {
         gamerChipsLabel.text = "\(gamerChips)"
         gamblingChipsImage.image = UIImage(named: "icons8-chip")
         resultView.isHidden = true
+        scoreView.isHidden = true
     }
     
     
