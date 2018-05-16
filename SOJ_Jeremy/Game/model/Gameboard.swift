@@ -6,9 +6,9 @@ class GameBoard {
     
     private init() { }
     
-    var gameOneScore = 0
-    var gameOneTimes = 0
-    var gameTwoScore = 0
-    var gameTwoTimes = 0
+    var gameOneScore = UserDefaults.standard.integer(forKey: "GameOneScore")
+    var gameOneTimes = UserDefaults.standard.integer(forKey: "GameOneTimes")
+    var gameTwoScore = UserDefaults.standard.integer(forKey: "GameTwoScore")
+    var gameTwoTimes = UserDefaults.standard.integer(forKey: "GameTwoTimes")
 
 }

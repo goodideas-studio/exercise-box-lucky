@@ -31,7 +31,7 @@ class SoJViewController: UIViewController {
     var seatThreeIsEmpty = true
     
     var timer = Timer()
-    var timeCount = 60
+    var timeCount = 20
     
     var money = 0
     
@@ -249,7 +249,7 @@ class SoJViewController: UIViewController {
             timerLabel.text = "時間剩下：\(timeCount)秒"
         } else {
             timer.invalidate()
-            timeCount = 60
+            timeCount = 20
             coverView.isHidden = false
             gameBoardLabel.isHidden = false
             GameBoard.current.gameTwoScore = max(GameBoard.current.gameTwoScore, money)
