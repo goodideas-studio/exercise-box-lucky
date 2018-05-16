@@ -11,9 +11,10 @@ class ViewController: UIViewController {
   enum direction: Int {
     case up
     case down
-    case left
-    case right
   }
+  let userdefaults = UserDefaults.standard
+  
+  var historyHighScore: Int?
   
   @IBOutlet weak var scoreLabel: UILabel!
   @IBOutlet weak var numberLabel: UILabel!
@@ -27,7 +28,6 @@ class ViewController: UIViewController {
   
   @IBOutlet weak var numLabelCarrierView: UIView!
   
-  
   //玩家得分：答對一題得 10 分
   var score = 0
   //檢查答案是否種正確
@@ -36,6 +36,7 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
   numLabelCarrierView.translatesAutoresizingMaskIntoConstraints = false
     scoreLabel.text = String(0)
     numberLabel.text = ""
@@ -62,6 +63,7 @@ class ViewController: UIViewController {
     print( "answer is \(answer)")
     if answer == text {
       score += 10
+      captureHistoryHighScore()
       scoreLabel.text = String(score)
       check = true
       var alert = promptWrongAnswer(title: "Rock", msg: "correct", actTitle: " you got it")
@@ -71,6 +73,7 @@ class ViewController: UIViewController {
       var alert = promptWrongAnswer(title: "Boomer", msg: "sorry", actTitle: "good try")
       self.present(alert, animated: true, completion: nil)
     }
+    
     return check
   }
 
@@ -80,6 +83,7 @@ class ViewController: UIViewController {
      print("answer is \(answer)")
     if reversed == text {
       score += 10
+      captureHistoryHighScore()
       check = true
       scoreLabel.text = String(score)
       var alert = promptWrongAnswer(title: "Rock", msg: "correct", actTitle: " you got it")
@@ -89,6 +93,7 @@ class ViewController: UIViewController {
       var alert = promptWrongAnswer(title: "Boomer", msg: "sorry", actTitle: "good try")
       self.present(alert, animated: true, completion: nil)
     }
+    
     return check
   }
   
@@ -106,13 +111,16 @@ class ViewController: UIViewController {
   }
   
   @IBAction func askNewNum(_ sender: UIButton) {
+    var storeTimes = userdefaults.integer(forKey: "EllsGamePlayedTimes")
+    storeTimes += 1
+    userdefaults.set(storeTimes, forKey: "EllsGamePlayedTimes")
     pressToReset()
     generateDirection()
   }
   
   @IBAction func resetGame(_ sender: UIButton) {
-    scoreLabel.text = String(0)
     
+    scoreLabel.text = String(0)
   }
   
   @IBAction func sentResult(_ sender: UIButton) {
@@ -172,6 +180,19 @@ class ViewController: UIViewController {
     let alertAct = UIAlertAction(title: actTitle, style: .default, handler: nil)
     alert.addAction(alertAct)
     return alert
+  }
+  
+  @IBAction func goBack(_ sender: UIButton) {
+    self.dismiss(animated: true, completion: nil)
+  }
+  
+  func captureHistoryHighScore() {
+    var storedScore = userdefaults.integer(forKey: "game1HighScore")
+    if storedScore == 0 || storedScore < score{
+      userdefaults.set(score, forKey: "game1HighScore")
+    } else {
+      print("score this time is \(score), defaults score is \(storedScore)")
+    }
   }
 }
 

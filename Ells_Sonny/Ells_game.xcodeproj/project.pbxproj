@@ -13,6 +13,9 @@
 		4D56E98020AA796C0096087B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D56E97F20AA796C0096087B /* Assets.xcassets */; };
 		4D56E98320AA796C0096087B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D56E98120AA796C0096087B /* LaunchScreen.storyboard */; };
 		4DB8F2D020ABCAD000F20BE1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8F2CF20ABCAD000F20BE1 /* MasterViewController.swift */; };
+		4DB8F2D520ABD01A00F20BE1 /* Score_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8F2D420ABD01A00F20BE1 /* Score_Record.swift */; };
+		4DB8F2D720ABD22100F20BE1 /* SonnyGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8F2D620ABD22100F20BE1 /* SonnyGameViewController.swift */; };
+		4DB8F2D920ABD25000F20BE1 /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8F2D820ABD25000F20BE1 /* myCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4D56E98220AA796C0096087B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D56E98420AA796C0096087B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DB8F2CF20ABCAD000F20BE1 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		4DB8F2D420ABD01A00F20BE1 /* Score_Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score_Record.swift; sourceTree = "<group>"; };
+		4DB8F2D620ABD22100F20BE1 /* SonnyGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SonnyGameViewController.swift; path = ../../../../Desktop/sonny/sonny/SonnyGameViewController.swift; sourceTree = "<group>"; };
+		4DB8F2D820ABD25000F20BE1 /* myCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		4D56E97720AA796B0096087B /* Ells_game */ = {
 			isa = PBXGroup;
 			children = (
+				4DB8F2D320ABCE4100F20BE1 /* Controller */,
+				4DB8F2D220ABCE2900F20BE1 /* Model */,
+				4DB8F2D120ABCE1C00F20BE1 /* Vew */,
 				4D56E97820AA796B0096087B /* AppDelegate.swift */,
-				4D56E97A20AA796B0096087B /* ViewController.swift */,
-				4D56E97C20AA796B0096087B /* Main.storyboard */,
 				4D56E97F20AA796C0096087B /* Assets.xcassets */,
 				4D56E98120AA796C0096087B /* LaunchScreen.storyboard */,
 				4D56E98420AA796C0096087B /* Info.plist */,
-				4DB8F2CF20ABCAD000F20BE1 /* MasterViewController.swift */,
 			);
 			path = Ells_game;
+			sourceTree = "<group>";
+		};
+		4DB8F2D120ABCE1C00F20BE1 /* Vew */ = {
+			isa = PBXGroup;
+			children = (
+				4D56E97C20AA796B0096087B /* Main.storyboard */,
+			);
+			path = Vew;
+			sourceTree = "<group>";
+		};
+		4DB8F2D220ABCE2900F20BE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DB8F2D420ABD01A00F20BE1 /* Score_Record.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DB8F2D320ABCE4100F20BE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DB8F2CF20ABCAD000F20BE1 /* MasterViewController.swift */,
+				4D56E97A20AA796B0096087B /* ViewController.swift */,
+				4DB8F2D620ABD22100F20BE1 /* SonnyGameViewController.swift */,
+				4DB8F2D820ABD25000F20BE1 /* myCollectionViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB8F2D920ABD25000F20BE1 /* myCollectionViewCell.swift in Sources */,
+				4DB8F2D720ABD22100F20BE1 /* SonnyGameViewController.swift in Sources */,
 				4D56E97B20AA796B0096087B /* ViewController.swift in Sources */,
 				4D56E97920AA796B0096087B /* AppDelegate.swift in Sources */,
 				4DB8F2D020ABCAD000F20BE1 /* MasterViewController.swift in Sources */,
+				4DB8F2D520ABD01A00F20BE1 /* Score_Record.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
