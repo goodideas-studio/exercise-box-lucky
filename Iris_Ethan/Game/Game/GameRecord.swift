@@ -12,4 +12,6 @@ class GameRecord {
     static let shared = GameRecord()
     var pokerGamePlay = 0
     var pokerMaxScore = 0
+    var directionGamePay = 0
+    var directionMaxScore = 0
 }

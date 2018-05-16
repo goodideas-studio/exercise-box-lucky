@@ -224,7 +224,7 @@ class GameVC: UIViewController {
         }
     }
     
-    //時間到出分數
+    //時間到出結果
     func callResult() {
         
               //  gamblingChipsImage.image = UIImage(named: "icons8-chip")
@@ -235,9 +235,8 @@ class GameVC: UIViewController {
                     self.scoreView.frame.origin.y = UIScreen.main.bounds.height / 2 - (self.scoreView.bounds.height / 2)
                     
                 }, completion: nil)
-        
-        
     }
+    
     
     //計時器
     func startTimer() {
@@ -258,9 +257,11 @@ class GameVC: UIViewController {
         countdownTimer.invalidate()
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         gamerChipsLabel.text = "\(gamerChips)"
         gamblingChipsImage.image = UIImage(named: "icons8-chip")
         resultView.isHidden = true
@@ -274,5 +275,4 @@ class GameVC: UIViewController {
     }
     
     
-
 }
