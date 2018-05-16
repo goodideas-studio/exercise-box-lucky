@@ -12,8 +12,7 @@ struct Player {
     var life = 3
     var score = 0
     static var correctCount = 0
-    static var playRPSCount = 0
-    static var playGuessCount = 0
+
 }
 
 struct UserDefaultKey {

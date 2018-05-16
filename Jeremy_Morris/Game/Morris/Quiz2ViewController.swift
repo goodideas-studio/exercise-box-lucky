@@ -1,5 +1,5 @@
 //
-//  Quiz3ViewController.swift
+//  Quiz2ViewController.swift.swift
 //  gamePractice
 //
 //  Created by Morris on 2018/5/15.
@@ -7,48 +7,41 @@
 //
 import UIKit
 
-class Quiz3ViewController: UIViewController {
-    
-//    var scoreFromQuiz2:Int?
-//    var scoreInQuiz3:Int?
-    
-    
+class Quiz2ViewController:UIViewController {
+    var scoreFromQuiz1:Int?
+    var scoreInQuiz2:Int?
     @IBAction func giveUpButton(_ sender: UIBarButtonItem) {
-//        scoreInQuiz3 = 0 + scoreFromQuiz2!
-        performSegue(withIdentifier: "goResult", sender: self)
-//    print("ScoreInQuiz3\(scoreInQuiz3)")
+//        scoreInQuiz2 = 0 + scoreFromQuiz1!
+//        print("ScoreInQuiz2\(scoreInQuiz2)")
+        performSegue(withIdentifier: "goQuiz3", sender: self)
+        //        print("giveUP\(scoreInQuiz2)")
     }
     
+    @IBOutlet weak var guessButton: UIButton!
     @IBOutlet var animationView: UIView!
+    @IBOutlet weak var correctOutlet: UIButton!
     
-    @IBAction func goResultButton(_ sender: UIButton) {
-//        if let score = scoreFromQuiz2{
-//            scoreInQuiz3 = score + 1
+    @IBAction func correctButtonPressed(_ sender: UIButton) {
+        continueOutlet.isEnabled = true
+        displayPickerView(false)
+    }
+    
+    @IBOutlet weak var continueOutlet: UIBarButtonItem!
+    @IBAction func continuePressed(_ sender: UIBarButtonItem) {
+//        if let score = scoreFromQuiz1{
+//            scoreInQuiz2 = score + 1
 //        }
+//        print("ScoreInQuiz2\(scoreInQuiz2)")
+        performSegue(withIdentifier: "goQuiz3", sender: self)
+    }
+    
+    @IBAction func guessButtonPressed(_ sender: UIButton) {
         Player.correctCount += 1
-        performSegue(withIdentifier: "goResult", sender: self)
-        
-//        print("ScoreInQuiz3\(scoreInQuiz3)")
-    }
-    
-    @IBAction func guessAnswerLeftPressed(_ sender: UIButton) {
-        
-        
-        
+        guessButton.isUserInteractionEnabled = false
         displayPickerView(true)
+        
+        
     }
-//    @IBAction func guessAnswerMidPressed(_ sender: Any) {
-//
-//
-//        displayPickerView(true)
-//    }
-//    @IBAction func guessAnswerRightPressed(_ sender: UIButton) {
-//
-//
-//
-//        displayPickerView(true)
-//    }
-    
     func displayPickerView(_ show:Bool){
         
         for bottomContraints in view.constraints {
@@ -62,17 +55,19 @@ class Quiz3ViewController: UIViewController {
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let vc = segue.destination as? ResultViewController {
-//            vc.scoreForResult = scoreInQuiz3
+//        if let vc = segue.destination as? Quiz3ViewController {
+//            vc.scoreFromQuiz2 = scoreInQuiz2
 //        }
     }
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        correctOutlet.layer.cornerRadius = correctOutlet.frame.height / 2
+        continueOutlet.isEnabled = false
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         view.addSubview(animationView)
@@ -86,4 +81,6 @@ class Quiz3ViewController: UIViewController {
         bottomContraints.identifier = "bottom"
         animationView.layer.cornerRadius = 10
     }
+    
+    
 }

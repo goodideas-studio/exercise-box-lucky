@@ -25,6 +25,7 @@ class Quiz1ViewController: UIViewController {
 //        print("scoreInQuiz1\(scoreInQuiz1)")
     }
     
+    @IBOutlet weak var guessButton: UIButton!
     @IBOutlet var animationView: UIView!
     @IBOutlet var introView: UIView!
     @IBOutlet weak var continueOutlet: UIBarButtonItem!
@@ -33,7 +34,6 @@ class Quiz1ViewController: UIViewController {
     
     @IBAction func correctButtonPressed(_ sender: UIButton) {
         continueOutlet.isEnabled = true
-        Player.correctCount += 1
         displayPickerView(false)
     }
     
@@ -45,6 +45,8 @@ class Quiz1ViewController: UIViewController {
     
     
     @IBAction func guessButton(_ sender: UIButton) {
+        Player.correctCount += 1
+        guessButton.isUserInteractionEnabled = false
         displayPickerView(true)
     }
     
@@ -81,11 +83,14 @@ class Quiz1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Player.playGuessCount += 1
+        Player.correctCount = 0
+        let playGuessCount = UserDefaults.standard.integer(forKey: UserDefaultKey.playGuessCount)
+        UserDefaults.standard.set(playGuessCount + 1, forKey: UserDefaultKey.playGuessCount)
+        
         okButton.layer.cornerRadius = 10
         correctButton.layer.cornerRadius = correctButton.frame.height / 2
         continueOutlet.isEnabled = false
-        Player.correctCount = 0
+
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

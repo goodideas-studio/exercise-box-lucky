@@ -20,6 +20,9 @@
 		5E8D9F6F20ABD7EB00DBB8A3 /* Quiz3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D9F6E20ABD7EB00DBB8A3 /* Quiz3ViewController.swift */; };
 		5E8D9F7120ABD94700DBB8A3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D9F7020ABD94700DBB8A3 /* ResultViewController.swift */; };
 		5E8D9F7320ABF0DD00DBB8A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D9F7220ABF0DD00DBB8A3 /* HomeViewController.swift */; };
+		5E8D9F7620AC06EE00DBB8A3 /* photoHuntGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E8D9F7420AC06EE00DBB8A3 /* photoHuntGame.png */; };
+		5E8D9F7720AC06EE00DBB8A3 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E8D9F7520AC06EE00DBB8A3 /* main.png */; };
+		5E8D9F7920AC0A8400DBB8A3 /* photoHuntAnwser.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E8D9F7820AC0A8400DBB8A3 /* photoHuntAnwser.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		5E8D9F6E20ABD7EB00DBB8A3 /* Quiz3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz3ViewController.swift; sourceTree = "<group>"; };
 		5E8D9F7020ABD94700DBB8A3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		5E8D9F7220ABF0DD00DBB8A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5E8D9F7420AC06EE00DBB8A3 /* photoHuntGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoHuntGame.png; sourceTree = "<group>"; };
+		5E8D9F7520AC06EE00DBB8A3 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		5E8D9F7820AC0A8400DBB8A3 /* photoHuntAnwser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoHuntAnwser.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				5E0C6A0620AAB429001E67D9 /* README.md */,
 				5E0C6A0720AAB580001E67D9 /* RPSGame.png */,
 				5E0C6A0920AAB5F3001E67D9 /* RestartGame.png */,
+				5E8D9F7520AC06EE00DBB8A3 /* main.png */,
+				5E8D9F7820AC0A8400DBB8A3 /* photoHuntAnwser.png */,
+				5E8D9F7420AC06EE00DBB8A3 /* photoHuntGame.png */,
 				5E0C69F120AA6EEB001E67D9 /* Game */,
 				5E0C69F020AA6EEB001E67D9 /* Products */,
 			);
@@ -76,12 +85,8 @@
 			children = (
 				5E0C6A0420AAA339001E67D9 /* PlayerModel.swift */,
 				5E8D9F6B20ABD26800DBB8A3 /* Jeremy */,
+				5E8D9F7A20AC14B800DBB8A3 /* Morris */,
 				5E0C69F620AA6EEB001E67D9 /* Main.storyboard */,
-				5E8D9F7220ABF0DD00DBB8A3 /* HomeViewController.swift */,
-				5E8D9F7020ABD94700DBB8A3 /* ResultViewController.swift */,
-				5E8D9F6920ABC97800DBB8A3 /* Quiz1ViewController.swift */,
-				5E8D9F6C20ABD37000DBB8A3 /* Quiz2ViewController.swift */,
-				5E8D9F6E20ABD7EB00DBB8A3 /* Quiz3ViewController.swift */,
 				5E0C69F920AA6EEB001E67D9 /* Assets.xcassets */,
 				5E0C69FB20AA6EEB001E67D9 /* LaunchScreen.storyboard */,
 				5E0C69FE20AA6EEB001E67D9 /* Info.plist */,
@@ -92,10 +97,22 @@
 		5E8D9F6B20ABD26800DBB8A3 /* Jeremy */ = {
 			isa = PBXGroup;
 			children = (
+				5E8D9F7220ABF0DD00DBB8A3 /* HomeViewController.swift */,
 				5E0C69F220AA6EEB001E67D9 /* AppDelegate.swift */,
 				5E0C69F420AA6EEB001E67D9 /* ViewController.swift */,
 			);
 			path = Jeremy;
+			sourceTree = "<group>";
+		};
+		5E8D9F7A20AC14B800DBB8A3 /* Morris */ = {
+			isa = PBXGroup;
+			children = (
+				5E8D9F7020ABD94700DBB8A3 /* ResultViewController.swift */,
+				5E8D9F6920ABC97800DBB8A3 /* Quiz1ViewController.swift */,
+				5E8D9F6C20ABD37000DBB8A3 /* Quiz2ViewController.swift */,
+				5E8D9F6E20ABD7EB00DBB8A3 /* Quiz3ViewController.swift */,
+			);
+			path = Morris;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,10 +175,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E0C69FD20AA6EEB001E67D9 /* LaunchScreen.storyboard in Resources */,
+				5E8D9F7920AC0A8400DBB8A3 /* photoHuntAnwser.png in Resources */,
+				5E8D9F7720AC06EE00DBB8A3 /* main.png in Resources */,
 				5E0C69FA20AA6EEB001E67D9 /* Assets.xcassets in Resources */,
 				5E0C6A0A20AAB5F3001E67D9 /* RestartGame.png in Resources */,
 				5E0C6A0820AAB581001E67D9 /* RPSGame.png in Resources */,
 				5E0C69F820AA6EEB001E67D9 /* Main.storyboard in Resources */,
+				5E8D9F7620AC06EE00DBB8A3 /* photoHuntGame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

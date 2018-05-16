@@ -335,6 +335,7 @@
                         <outlet property="animationView" destination="zR4-0G-FiT" id="74w-SZ-cSK"/>
                         <outlet property="continueOutlet" destination="mdS-HN-zgn" id="J1u-Fa-0mB"/>
                         <outlet property="correctButton" destination="o6v-lp-0mY" id="bEb-Ej-ziz"/>
+                        <outlet property="guessButton" destination="plf-TR-GRp" id="6io-ut-7RD"/>
                         <outlet property="introView" destination="vtx-Ix-IAC" id="vst-Cl-bDo"/>
                         <outlet property="okButton" destination="o6v-lp-0mY" id="oDh-48-AX9"/>
                         <segue destination="CXP-EC-OBb" kind="show" identifier="goQuiz2" id="Tln-n2-0XF"/>
@@ -445,6 +446,7 @@
                         <outlet property="animationView" destination="Qnz-93-FpF" id="B5U-X6-vqe"/>
                         <outlet property="continueOutlet" destination="FQR-ho-Ncf" id="AUT-Ye-nTw"/>
                         <outlet property="correctOutlet" destination="caf-N8-ICN" id="TqV-R3-j3f"/>
+                        <outlet property="guessButton" destination="sgE-1l-Lvk" id="sOa-lL-Q22"/>
                         <segue destination="mBC-Og-pjm" kind="show" identifier="goQuiz3" id="5pn-QW-s4y"/>
                     </connections>
                 </viewController>
@@ -518,6 +520,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="animationView" destination="zrn-Gn-qeh" id="DfS-B0-ZPs"/>
+                        <outlet property="guessButton" destination="G44-dV-V4S" id="xNa-g1-GWa"/>
                         <segue destination="Rep-Ka-NZJ" kind="show" identifier="goResult" id="5ff-Mx-Hat"/>
                     </connections>
                 </viewController>

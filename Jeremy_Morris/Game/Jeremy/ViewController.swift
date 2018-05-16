@@ -89,7 +89,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Player.playRPSCount += 1
+        
+        let playRpsCount = UserDefaults.standard.integer(forKey: UserDefaultKey.playRpsCount)
+        UserDefaults.standard.set(playRpsCount + 1, forKey: UserDefaultKey.playRpsCount)
         
         rpsRandom()
         firstLineImage.center = self.gameView.center

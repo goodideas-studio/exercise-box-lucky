@@ -30,10 +30,10 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let playRpsCount = UserDefaults.standard.integer(forKey: UserDefaultKey.playRpsCount) + Player.playRPSCount
+        let playRpsCount = UserDefaults.standard.integer(forKey: UserDefaultKey.playRpsCount)
         let rpsHighScore = UserDefaults.standard.integer(forKey: UserDefaultKey.rpsHighScore)
         
-        let playGuessCount = UserDefaults.standard.integer(forKey: UserDefaultKey.playGuessCount) + Player.playGuessCount
+        let playGuessCount = UserDefaults.standard.integer(forKey: UserDefaultKey.playGuessCount)
         let guessHighScore = UserDefaults.standard.integer(forKey: UserDefaultKey.guessHighScore)
         
         rpsRecordLabel.text = "遊玩次數：\(playRpsCount),最高分為：\(rpsHighScore) 分"
