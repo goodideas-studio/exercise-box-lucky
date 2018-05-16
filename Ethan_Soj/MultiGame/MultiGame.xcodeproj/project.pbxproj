@@ -17,7 +17,6 @@
 		D66F9C7020ABCFC200E2C0AC /* drinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C6F20ABCFC200E2C0AC /* drinkButtonStyle.swift */; };
 		D66F9C7320ABD34300E2C0AC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C7220ABD34300E2C0AC /* Order.swift */; };
 		D66F9C7520ABD58D00E2C0AC /* MenuBalckViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C7420ABD58D00E2C0AC /* MenuBalckViewStyle.swift */; };
-		D66F9C7820ABD7DF00E2C0AC /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F9C7720ABD7DF00E2C0AC /* Keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		D66F9C6F20ABCFC200E2C0AC /* drinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkButtonStyle.swift; sourceTree = "<group>"; };
 		D66F9C7220ABD34300E2C0AC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		D66F9C7420ABD58D00E2C0AC /* MenuBalckViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBalckViewStyle.swift; sourceTree = "<group>"; };
-		D66F9C7720ABD7DF00E2C0AC /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				D66F9C5820ABC26000E2C0AC /* AppDelegate.swift */,
-				D66F9C7920ABD7E200E2C0AC /* Key */,
 				D66F9C7620ABD7C500E2C0AC /* Model */,
 				D66F9C7120ABCFC600E2C0AC /* View */,
 				D66F9C6E20ABC78200E2C0AC /* Controllers */,
@@ -104,14 +101,6 @@
 				D66F9C7220ABD34300E2C0AC /* Order.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		D66F9C7920ABD7E200E2C0AC /* Key */ = {
-			isa = PBXGroup;
-			children = (
-				D66F9C7720ABD7DF00E2C0AC /* Keys.swift */,
-			);
-			path = Key;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +175,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66F9C7520ABD58D00E2C0AC /* MenuBalckViewStyle.swift in Sources */,
-				D66F9C7820ABD7DF00E2C0AC /* Keys.swift in Sources */,
 				D66F9C7320ABD34300E2C0AC /* Order.swift in Sources */,
 				D66F9C5B20ABC26000E2C0AC /* MenuViewController.swift in Sources */,
 				D66F9C6B20ABC3CB00E2C0AC /* Game1ViewController.swift in Sources */,

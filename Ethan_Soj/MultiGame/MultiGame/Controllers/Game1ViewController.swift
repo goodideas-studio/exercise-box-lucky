@@ -131,10 +131,10 @@ class Game1ViewController: UIViewController {
                     
                     //按下確定後把遊玩次數+1並存在UserDefault
                     self.game1PlayTimes! = self.game1PlayTimes! + 1
-                    UserDefaults.standard.set(self.game1PlayTimes, forKey: UserDefaultsKey.game1PlayTimes)
+                    UserDefaults.standard.set(self.game1PlayTimes, forKey: "game1PlayTimes")
                     //按下確定後把分數存到UserDefault(前提是這次的最高分比前一次高才存)
                     if self.totalScore >= self.game1HighestScore!{
-                        UserDefaults.standard.set(self.totalScore, forKey: UserDefaultsKey.game1HighestScore)
+                        UserDefaults.standard.set(self.totalScore, forKey: "game1HighestScore")
                     }
                     
                     
@@ -162,9 +162,9 @@ class Game1ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //把UserDefault得到的值存進去原本的game1PlayTimes
-        self.game1PlayTimes = UserDefaults.standard.integer(forKey: UserDefaultsKey.game1PlayTimes)
+        self.game1PlayTimes = UserDefaults.standard.integer(forKey: "game1PlayTimes")
         //把UserDefaults存過的最高分存回最高分
-        self.game1HighestScore = UserDefaults.standard.integer(forKey: UserDefaultsKey.game1HighestScore)
+        self.game1HighestScore = UserDefaults.standard.integer(forKey: "game1HighestScore")
     }
 
     override func viewDidAppear(_ animated: Bool) {

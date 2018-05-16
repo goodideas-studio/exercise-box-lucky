@@ -30,9 +30,9 @@ class MenuViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        var game1PlayTimes = UserDefaults.standard.integer(forKey: UserDefaultsKey.game1PlayTimes)
+        var game1PlayTimes = UserDefaults.standard.integer(forKey: "game1PlayTimes")
         game1PlayTimesLabel.text = "玩了\(game1PlayTimes)次"
-        game1HighestLabel.text = "歷史最高\(UserDefaults.standard.integer(forKey: UserDefaultsKey.game1HighestScore))分"
+        game1HighestLabel.text = "歷史最高\(UserDefaults.standard.integer(forKey: "game1HighestScore"))分"
         
         game2PlayTimesLabel.text = "玩了\(UserDefaults.standard.integer(forKey: "game2PlayTimes"))次"
         game2HighestLabel.text = "歷史最高\(UserDefaults.standard.integer(forKey: "game2HighestScore"))分"
