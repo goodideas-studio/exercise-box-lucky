@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7017A1E420ABC90200186A13 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7017A1E320ABC90200186A13 /* Billabong.ttf */; };
+		7017A1E820ABCD8800186A13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7017A1E720ABCD8800186A13 /* Main.storyboard */; };
+		7017A1EB20ABD7C500186A13 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7017A1EA20ABD7C500186A13 /* EntryViewController.swift */; };
+		7017A1EE20ABD97200186A13 /* Dice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7017A1EC20ABD97200186A13 /* Dice.storyboard */; };
+		7017A1F120ABDADA00186A13 /* DiceGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7017A1F020ABDADA00186A13 /* DiceGameViewController.swift */; };
+		7017A1F420ABDB4600186A13 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7017A1F320ABDB4600186A13 /* UIButton.swift */; };
+		70DF000D20ABEE86004F5BD0 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DF000C20ABEE86004F5BD0 /* UserDefaults.swift */; };
 		ACB66FFE20AA71F4009B6A16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB66FFD20AA71F4009B6A16 /* AppDelegate.swift */; };
-		ACB6700020AA71F4009B6A16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB66FFF20AA71F4009B6A16 /* ViewController.swift */; };
-		ACB6700320AA71F4009B6A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB6700120AA71F4009B6A16 /* Main.storyboard */; };
+		ACB6700020AA71F4009B6A16 /* PokerRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB66FFF20AA71F4009B6A16 /* PokerRootViewController.swift */; };
+		ACB6700320AA71F4009B6A16 /* Poker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB6700120AA71F4009B6A16 /* Poker.storyboard */; };
 		ACB6700520AA71F5009B6A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB6700420AA71F5009B6A16 /* Assets.xcassets */; };
 		ACB6700820AA71F6009B6A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB6700620AA71F6009B6A16 /* LaunchScreen.storyboard */; };
 		ACB6701320AA71F6009B6A16 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6701220AA71F6009B6A16 /* GameTests.swift */; };
 		ACB6701E20AA71F6009B6A16 /* GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6701D20AA71F6009B6A16 /* GameUITests.swift */; };
 		ACB6702C20AA8706009B6A16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACB6702B20AA86F6009B6A16 /* Default-568h@2x.png */; };
-		ACB6702F20AA87E0009B6A16 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB6702E20AA87DF009B6A16 /* Billabong.ttf */; };
-		ACB6703120AA894E009B6A16 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6703020AA894E009B6A16 /* GameVC.swift */; };
+		ACB6703120AA894E009B6A16 /* GameSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6703020AA894E009B6A16 /* GameSceneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7017A1E320ABC90200186A13 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
+		7017A1E720ABCD8800186A13 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7017A1EA20ABD7C500186A13 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		7017A1ED20ABD97200186A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../../../Desktop/Gavin/HitTheHole/Stroryboard/Base.lproj/Dice.storyboard; sourceTree = "<group>"; };
+		7017A1F020ABDADA00186A13 /* DiceGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiceGameViewController.swift; path = "../../../../../../Desktop/Gavin/HitTheHole/View Controller/DiceGameViewController.swift"; sourceTree = "<group>"; };
+		7017A1F320ABDB4600186A13 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = ../../../../../../Desktop/Gavin/HitTheHole/Extension/UIButton.swift; sourceTree = "<group>"; };
+		70DF000C20ABEE86004F5BD0 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		AC23409420AB6723002FE886 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ACB66FFA20AA71F4009B6A16 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB66FFD20AA71F4009B6A16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACB66FFF20AA71F4009B6A16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ACB6700220AA71F4009B6A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACB66FFF20AA71F4009B6A16 /* PokerRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerRootViewController.swift; sourceTree = "<group>"; };
+		ACB6700220AA71F4009B6A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Poker.storyboard; sourceTree = "<group>"; };
 		ACB6700420AA71F5009B6A16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB6700720AA71F6009B6A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACB6700920AA71F6009B6A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,8 +65,7 @@
 		ACB6701D20AA71F6009B6A16 /* GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUITests.swift; sourceTree = "<group>"; };
 		ACB6701F20AA71F6009B6A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACB6702B20AA86F6009B6A16 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		ACB6702E20AA87DF009B6A16 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Billabong.ttf; path = ../../../Downloads/Billabong.ttf; sourceTree = "<group>"; };
-		ACB6703020AA894E009B6A16 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		ACB6703020AA894E009B6A16 /* GameSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7017A1E520ABC92F00186A13 /* Poker Game */ = {
+			isa = PBXGroup;
+			children = (
+				ACB66FFF20AA71F4009B6A16 /* PokerRootViewController.swift */,
+				ACB6703020AA894E009B6A16 /* GameSceneViewController.swift */,
+			);
+			path = "Poker Game";
+			sourceTree = "<group>";
+		};
+		7017A1E620ABC94200186A13 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7017A1EC20ABD97200186A13 /* Dice.storyboard */,
+				ACB6700120AA71F4009B6A16 /* Poker.storyboard */,
+				ACB6700620AA71F6009B6A16 /* LaunchScreen.storyboard */,
+				7017A1E720ABCD8800186A13 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		7017A1E920ABD77D00186A13 /* Entry View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7017A1EA20ABD7C500186A13 /* EntryViewController.swift */,
+			);
+			path = "Entry View Controller";
+			sourceTree = "<group>";
+		};
+		7017A1EF20ABDABB00186A13 /* Dice Game */ = {
+			isa = PBXGroup;
+			children = (
+				7017A1F020ABDADA00186A13 /* DiceGameViewController.swift */,
+			);
+			path = "Dice Game";
+			sourceTree = "<group>";
+		};
+		7017A1F220ABDB2000186A13 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7017A1F320ABDB4600186A13 /* UIButton.swift */,
+				70DF000C20ABEE86004F5BD0 /* UserDefaults.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		ACB66FF120AA71F3009B6A16 = {
 			isa = PBXGroup;
 			children = (
@@ -106,13 +163,14 @@
 		ACB66FFC20AA71F4009B6A16 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				ACB6702E20AA87DF009B6A16 /* Billabong.ttf */,
+				7017A1F220ABDB2000186A13 /* Extension */,
+				7017A1EF20ABDABB00186A13 /* Dice Game */,
+				7017A1E920ABD77D00186A13 /* Entry View Controller */,
+				7017A1E620ABC94200186A13 /* StoryBoard */,
+				7017A1E520ABC92F00186A13 /* Poker Game */,
+				7017A1E320ABC90200186A13 /* Billabong.ttf */,
 				ACB66FFD20AA71F4009B6A16 /* AppDelegate.swift */,
-				ACB66FFF20AA71F4009B6A16 /* ViewController.swift */,
-				ACB6700120AA71F4009B6A16 /* Main.storyboard */,
-				ACB6703020AA894E009B6A16 /* GameVC.swift */,
 				ACB6700420AA71F5009B6A16 /* Assets.xcassets */,
-				ACB6700620AA71F6009B6A16 /* LaunchScreen.storyboard */,
 				ACB6700920AA71F6009B6A16 /* Info.plist */,
 			);
 			path = Game;
@@ -240,11 +298,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7017A1EE20ABD97200186A13 /* Dice.storyboard in Resources */,
 				ACB6700820AA71F6009B6A16 /* LaunchScreen.storyboard in Resources */,
 				ACB6702C20AA8706009B6A16 /* Default-568h@2x.png in Resources */,
 				ACB6700520AA71F5009B6A16 /* Assets.xcassets in Resources */,
-				ACB6702F20AA87E0009B6A16 /* Billabong.ttf in Resources */,
-				ACB6700320AA71F4009B6A16 /* Main.storyboard in Resources */,
+				7017A1E820ABCD8800186A13 /* Main.storyboard in Resources */,
+				7017A1E420ABC90200186A13 /* Billabong.ttf in Resources */,
+				ACB6700320AA71F4009B6A16 /* Poker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB6700020AA71F4009B6A16 /* ViewController.swift in Sources */,
-				ACB6703120AA894E009B6A16 /* GameVC.swift in Sources */,
+				7017A1F120ABDADA00186A13 /* DiceGameViewController.swift in Sources */,
+				70DF000D20ABEE86004F5BD0 /* UserDefaults.swift in Sources */,
+				ACB6700020AA71F4009B6A16 /* PokerRootViewController.swift in Sources */,
+				7017A1EB20ABD7C500186A13 /* EntryViewController.swift in Sources */,
+				ACB6703120AA894E009B6A16 /* GameSceneViewController.swift in Sources */,
 				ACB66FFE20AA71F4009B6A16 /* AppDelegate.swift in Sources */,
+				7017A1F420ABDB4600186A13 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,12 +371,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ACB6700120AA71F4009B6A16 /* Main.storyboard */ = {
+		7017A1EC20ABD97200186A13 /* Dice.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7017A1ED20ABD97200186A13 /* Base */,
+			);
+			name = Dice.storyboard;
+			sourceTree = "<group>";
+		};
+		ACB6700120AA71F4009B6A16 /* Poker.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ACB6700220AA71F4009B6A16 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Poker.storyboard;
 			sourceTree = "<group>";
 		};
 		ACB6700620AA71F6009B6A16 /* LaunchScreen.storyboard */ = {
@@ -445,13 +517,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NE9H5QPYHM;
+				DEVELOPMENT_TEAM = XRUZX72PMD;
 				INFOPLIST_FILE = Game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = self.Game;
+				PRODUCT_BUNDLE_IDENTIFIER = PinguDemo.Game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,13 +535,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NE9H5QPYHM;
+				DEVELOPMENT_TEAM = XRUZX72PMD;
 				INFOPLIST_FILE = Game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = self.Game;
+				PRODUCT_BUNDLE_IDENTIFIER = PinguDemo.Game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

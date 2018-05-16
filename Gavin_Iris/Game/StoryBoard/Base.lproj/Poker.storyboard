@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Poker Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PokerRootViewController" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="-194.40000000000001" y="158.77061469265368"/>
         </scene>
-        <!--GameVC-->
+        <!--Game Scene View Controller-->
         <scene sceneID="CMJ-Pi-vk7">
             <objects>
-                <viewController id="mv0-ii-Qpj" customClass="GameVC" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mv0-ii-Qpj" customClass="GameSceneViewController" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ILG-Kh-bVO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,6 +142,28 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AO-V2-bA3" userLabel="Home Button">
+                                <rect key="frame" x="16" y="622" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="KB8-or-j9b"/>
+                                    <constraint firstAttribute="width" constant="32" id="Ryz-aK-WCz"/>
+                                </constraints>
+                                <state key="normal" image="home"/>
+                                <connections>
+                                    <segue destination="Kfs-Dz-8KS" kind="unwind" unwindAction="unwindToNotesViewControllerWithSegue:" id="KvN-js-4x0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZB-YS-0ha" userLabel="Reset Button">
+                                <rect key="frame" x="56" y="622" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="pml-iU-Ml0"/>
+                                    <constraint firstAttribute="width" constant="32" id="rSd-U4-FWs"/>
+                                </constraints>
+                                <state key="normal" image="reset"/>
+                                <connections>
+                                    <action selector="didTapResetButton:" destination="mv0-ii-Qpj" eventType="touchUpInside" id="sqi-s6-NHW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -150,8 +172,12 @@
                             <constraint firstItem="Wu2-l2-JRI" firstAttribute="leading" secondItem="Qtv-ct-FkP" secondAttribute="leading" id="AKC-ma-V0y"/>
                             <constraint firstItem="Qtv-ct-FkP" firstAttribute="trailing" secondItem="pAL-an-0hz" secondAttribute="trailing" constant="13" id="Bgk-QD-9tA"/>
                             <constraint firstItem="Wu2-l2-JRI" firstAttribute="bottom" secondItem="Qtv-ct-FkP" secondAttribute="bottom" id="FIG-ID-Pbc"/>
+                            <constraint firstItem="oZB-YS-0ha" firstAttribute="leading" secondItem="7AO-V2-bA3" secondAttribute="trailing" constant="8" id="J5J-eT-n0y"/>
                             <constraint firstItem="Qtv-ct-FkP" firstAttribute="bottom" secondItem="pAL-an-0hz" secondAttribute="bottom" constant="18" id="QwZ-a5-kUf"/>
                             <constraint firstItem="Wu2-l2-JRI" firstAttribute="trailing" secondItem="Qtv-ct-FkP" secondAttribute="trailing" id="SL8-Dz-d3q"/>
+                            <constraint firstItem="Qtv-ct-FkP" firstAttribute="bottom" secondItem="oZB-YS-0ha" secondAttribute="bottom" constant="13" id="UzX-QP-Qgf"/>
+                            <constraint firstItem="7AO-V2-bA3" firstAttribute="leading" secondItem="Qtv-ct-FkP" secondAttribute="leading" constant="16" id="VPM-Ya-Rjz"/>
+                            <constraint firstItem="Qtv-ct-FkP" firstAttribute="bottom" secondItem="7AO-V2-bA3" secondAttribute="bottom" constant="13" id="qGS-Ck-Qz1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qtv-ct-FkP"/>
                     </view>
@@ -168,6 +194,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3K5-7F-D4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Kfs-Dz-8KS" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="right" id="AK3-Oo-XSd">
                     <connections>
                         <action selector="rightGesture:" destination="mv0-ii-Qpj" id="dp0-av-EHT"/>
@@ -193,6 +220,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="home" width="100" height="100"/>
+        <image name="reset" width="96" height="96"/>
         <image name="table" width="768" height="1024"/>
         <image name="table拷貝" width="768" height="605"/>
     </resources>
