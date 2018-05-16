@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background01" translatesAutoresizingMaskIntoConstraints="NO" id="u3Z-GR-NVE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="骷髏左走" translatesAutoresizingMaskIntoConstraints="NO" id="ZM7-Ge-GkX">
+                                <rect key="frame" x="22.5" y="470" width="95" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech-bubble" translatesAutoresizingMaskIntoConstraints="NO" id="T2v-1h-7Rz">
+                                <rect key="frame" x="8" y="370" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drink01" translatesAutoresizingMaskIntoConstraints="NO" id="Hji-8q-fzR">
+                                <rect key="frame" x="29" y="380" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uv-be-4JD">
+                                <rect key="frame" x="52" y="443" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="鬼魂左走" translatesAutoresizingMaskIntoConstraints="NO" id="bie-VI-f4y">
+                                <rect key="frame" x="140" y="470" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech-bubble" translatesAutoresizingMaskIntoConstraints="NO" id="Awb-jf-Tz3">
+                                <rect key="frame" x="120.5" y="370" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drink02" translatesAutoresizingMaskIntoConstraints="NO" id="We9-dl-ovL">
+                                <rect key="frame" x="141.5" y="380" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8f-AZ-diq">
+                                <rect key="frame" x="166.5" y="443" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="騎士左走" translatesAutoresizingMaskIntoConstraints="NO" id="UjE-Nb-oqK">
+                                <rect key="frame" x="257.5" y="470" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech-bubble" translatesAutoresizingMaskIntoConstraints="NO" id="qBO-G6-76m">
+                                <rect key="frame" x="236" y="370" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drink03" translatesAutoresizingMaskIntoConstraints="NO" id="3iy-1T-GaH">
+                                <rect key="frame" x="254" y="380" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCL-UF-pC0">
+                                <rect key="frame" x="281" y="443" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background02" translatesAutoresizingMaskIntoConstraints="NO" id="x9H-nC-OTN">
+                                <rect key="frame" x="0.0" y="547" width="375" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="y4U-k7-OuZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OY4-d8-ccl" customClass="drinkButtonStyle" customModule="Game" customModuleProvider="target">
+                                <rect key="frame" x="27" y="597" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="C3S-fv-b6d"/>
+                                    <constraint firstAttribute="height" constant="60" id="aKr-bT-a6l"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="drink01"/>
+                                <connections>
+                                    <action selector="drink01Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Is1-mU-JWa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxZ-Wk-7KI" customClass="drinkButtonStyle" customModule="Game" customModuleProvider="target">
+                                <rect key="frame" x="114" y="597" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3Kf-WG-2Kk"/>
+                                    <constraint firstAttribute="height" constant="60" id="LkI-2f-nre"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="drink02"/>
+                                <connections>
+                                    <action selector="drink02Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZY-sC-bQT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkp-aM-5IE" customClass="drinkButtonStyle" customModule="Game" customModuleProvider="target">
+                                <rect key="frame" x="201" y="597" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GQt-dn-iEC"/>
+                                    <constraint firstAttribute="width" constant="60" id="PQh-SH-BUN"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="drink03"/>
+                                <connections>
+                                    <action selector="drink03Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a07-F6-t88"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zor-3f-xZw" customClass="drinkButtonStyle" customModule="Game" customModuleProvider="target">
+                                <rect key="frame" x="288" y="597" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="TGN-RY-esr"/>
+                                    <constraint firstAttribute="height" constant="60" id="t6j-o5-Mfl"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="drink04"/>
+                                <connections>
+                                    <action selector="drink04Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E4P-78-RBS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin" translatesAutoresizingMaskIntoConstraints="NO" id="Y05-J2-4NX">
+                                <rect key="frame" x="16" y="16" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Epq-X0-Cia"/>
+                                    <constraint firstAttribute="width" constant="64" id="GWB-Ku-rEs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUH-uD-1Sh">
+                                <rect key="frame" x="88" y="23" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QFS-2A-d0f"/>
+                                    <constraint firstAttribute="width" constant="250" id="rsm-kU-Msg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5m-l3-ME9" userLabel="timer">
+                                <rect key="frame" x="16" y="80" width="200" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTr-gI-R2f">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bh1-xB-Wzu">
+                                        <rect key="frame" x="99" y="296.5" width="177" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="點擊後開始"/>
+                                        <connections>
+                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cOL-qq-jrv"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gameLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TeO-ap-XzI">
+                                        <rect key="frame" x="68" y="353" width="240" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="LqP-tj-8bG"/>
+                                            <constraint firstAttribute="width" constant="240" id="yps-Sc-4Vo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TeO-ap-XzI" firstAttribute="centerX" secondItem="OTr-gI-R2f" secondAttribute="centerX" id="89k-kw-W0k"/>
+                                    <constraint firstItem="Bh1-xB-Wzu" firstAttribute="centerX" secondItem="OTr-gI-R2f" secondAttribute="centerX" id="Cfm-km-v2p"/>
+                                    <constraint firstItem="TeO-ap-XzI" firstAttribute="centerY" secondItem="OTr-gI-R2f" secondAttribute="centerY" multiplier="1.4" id="j2i-gV-6We"/>
+                                    <constraint firstItem="Bh1-xB-Wzu" firstAttribute="centerY" secondItem="OTr-gI-R2f" secondAttribute="centerY" id="p5s-R0-bCg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zor-3f-xZw" secondAttribute="bottom" constant="10" id="0iN-ev-ItF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u3Z-GR-NVE" secondAttribute="bottom" id="1EO-IY-HqJ"/>
+                            <constraint firstItem="OTr-gI-R2f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Us-XW-fKZ"/>
+                            <constraint firstItem="OY4-d8-ccl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="84V-iP-JBS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u3Z-GR-NVE" secondAttribute="trailing" id="L4c-IE-l0P"/>
+                            <constraint firstAttribute="trailing" secondItem="Zor-3f-xZw" secondAttribute="trailing" constant="27" id="QRx-VP-Kaz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nxZ-Wk-7KI" secondAttribute="bottom" constant="10" id="SKc-7X-t1D"/>
+                            <constraint firstItem="u3Z-GR-NVE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TT3-26-Ffk"/>
+                            <constraint firstItem="nxZ-Wk-7KI" firstAttribute="leading" secondItem="OY4-d8-ccl" secondAttribute="trailing" constant="27" id="VmF-SW-xFW"/>
+                            <constraint firstItem="x9H-nC-OTN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WxU-zX-PFK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OY4-d8-ccl" secondAttribute="bottom" constant="10" id="b5w-By-ca6"/>
+                            <constraint firstItem="Zor-3f-xZw" firstAttribute="leading" secondItem="Bkp-aM-5IE" secondAttribute="trailing" constant="27" id="dPN-mZ-Eph"/>
+                            <constraint firstItem="OTr-gI-R2f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gPs-rx-Wmx"/>
+                            <constraint firstItem="x9H-nC-OTN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="i91-3O-rA0"/>
+                            <constraint firstItem="x9H-nC-OTN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="iDh-Wp-l6i"/>
+                            <constraint firstItem="Y05-J2-4NX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iep-17-PbN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OTr-gI-R2f" secondAttribute="trailing" id="jgn-O0-7NR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="OTr-gI-R2f" secondAttribute="top" id="mf6-Bm-FRP"/>
+                            <constraint firstItem="EUH-uD-1Sh" firstAttribute="centerY" secondItem="Y05-J2-4NX" secondAttribute="centerY" id="q0p-X1-TvC"/>
+                            <constraint firstItem="u3Z-GR-NVE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qY2-tQ-ukc"/>
+                            <constraint firstItem="EUH-uD-1Sh" firstAttribute="leading" secondItem="Y05-J2-4NX" secondAttribute="trailing" constant="8" id="qev-Px-6Q1"/>
+                            <constraint firstItem="Bkp-aM-5IE" firstAttribute="leading" secondItem="nxZ-Wk-7KI" secondAttribute="trailing" constant="27" id="tSA-1U-0zM"/>
+                            <constraint firstItem="Y05-J2-4NX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="16" id="vcg-Xj-pSB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bkp-aM-5IE" secondAttribute="bottom" constant="10" id="xQI-ju-YdV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="coverView" destination="OTr-gI-R2f" id="Ixi-G8-vxQ"/>
+                        <outlet property="customer01BubbleImageView" destination="T2v-1h-7Rz" id="pZJ-Bc-L13"/>
+                        <outlet property="customer01Clear" destination="6Uv-be-4JD" id="vWq-Ok-qrP"/>
+                        <outlet property="customer01DrinkImageView" destination="Hji-8q-fzR" id="ZPv-5a-P7t"/>
+                        <outlet property="customer01ImageView" destination="ZM7-Ge-GkX" id="uLP-fn-Blt"/>
+                        <outlet property="customer02BubbleImageView" destination="Awb-jf-Tz3" id="LK6-e4-Q29"/>
+                        <outlet property="customer02Clear" destination="t8f-AZ-diq" id="aQf-ze-n6O"/>
+                        <outlet property="customer02DrinkImageView" destination="We9-dl-ovL" id="GZt-5y-6bD"/>
+                        <outlet property="customer02ImageView" destination="bie-VI-f4y" id="4Le-HM-zgg"/>
+                        <outlet property="customer03BubbleImageView" destination="qBO-G6-76m" id="9Dv-KF-pQl"/>
+                        <outlet property="customer03Clear" destination="jCL-UF-pC0" id="OgT-bC-zVB"/>
+                        <outlet property="customer03DrinkImageView" destination="3iy-1T-GaH" id="Ueu-dE-3DL"/>
+                        <outlet property="customer03ImageView" destination="UjE-Nb-oqK" id="5N1-EY-Wnf"/>
+                        <outlet property="gameBoardLabel" destination="TeO-ap-XzI" id="xfK-N1-3Ro"/>
+                        <outlet property="moneyLabel" destination="EUH-uD-1Sh" id="H1M-gK-lcr"/>
+                        <outlet property="timerLabel" destination="e5m-l3-ME9" id="9Qt-jX-sfU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="29.23538230884558"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background01" width="490" height="919"/>
+        <image name="background02" width="491" height="188"/>
+        <image name="coin" width="64" height="64"/>
+        <image name="drink01" width="512" height="512"/>
+        <image name="drink02" width="512" height="512"/>
+        <image name="drink03" width="512" height="512"/>
+        <image name="drink04" width="512" height="512"/>
+        <image name="speech-bubble" width="512" height="512"/>
+        <image name="騎士左走" width="32" height="32"/>
+        <image name="骷髏左走" width="32" height="32"/>
+        <image name="鬼魂左走" width="32" height="32"/>
+    </resources>
+</document>
