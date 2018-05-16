@@ -13,18 +13,18 @@ class Quiz1ViewController: UIViewController {
 //
 //    }
     
-    var scoreInQuiz1:Int = 0
+//    var scoreInQuiz1:Int = 0
     
     @IBAction func giveUpButton(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "goQuiz2", sender: self)
-        print("scoreInQuiz1\(scoreInQuiz1)")
+//        print("scoreInQuiz1\(scoreInQuiz1)")
     }
     
     @IBAction func continuePressed(_ sender: Any) {
-        scoreInQuiz1 += 1
         performSegue(withIdentifier: "goQuiz2", sender: self)
-        print("scoreInQuiz1\(scoreInQuiz1)")
+//        print("scoreInQuiz1\(scoreInQuiz1)")
     }
+    
     @IBOutlet var animationView: UIView!
     @IBOutlet var introView: UIView!
     @IBOutlet weak var continueOutlet: UIBarButtonItem!
@@ -33,11 +33,11 @@ class Quiz1ViewController: UIViewController {
     
     @IBAction func correctButtonPressed(_ sender: UIButton) {
         continueOutlet.isEnabled = true
+        Player.correctCount += 1
         displayPickerView(false)
     }
     
     @IBAction func okPressed(_ sender: Any) {
-        
         displayIntroView(false)
     }
     
@@ -45,7 +45,6 @@ class Quiz1ViewController: UIViewController {
     
     
     @IBAction func guessButton(_ sender: UIButton) {
-        
         displayPickerView(true)
     }
     
@@ -73,16 +72,20 @@ class Quiz1ViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? Quiz2ViewController {
-            vc.scoreFromQuiz1 = scoreInQuiz1
-        }
-    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let vc = segue.destination as? Quiz2ViewController {
+//            vc.scoreFromQuiz1 = scoreInQuiz1
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Player.playGuessCount += 1
         okButton.layer.cornerRadius = 10
-        correctButton.layer.cornerRadius = 10
+        correctButton.layer.cornerRadius = correctButton.frame.height / 2
+        continueOutlet.isEnabled = false
+        Player.correctCount = 0
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

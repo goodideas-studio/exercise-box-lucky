@@ -19,9 +19,7 @@ struct GameRule {
     static let lose = "lose"
 }
 
-struct UserDefaultKey {
-    static let rpsHighScore = "rpsHighScore"
-}
+
 
 
 class ViewController: UIViewController {
@@ -91,6 +89,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Player.playRPSCount += 1
+        
         rpsRandom()
         firstLineImage.center = self.gameView.center
         
