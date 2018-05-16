@@ -1,25 +1,28 @@
 //
 //  ViewController.swift
-//  gamePractice_withGavin
+//  gamePractice
 //
-//  Created by Morris on 2018/5/16.
+//  Created by Morris on 2018/5/15.
 //  Copyright © 2018年 Morris. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var buttonOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        buttonOutlet.layer.cornerRadius = 10
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

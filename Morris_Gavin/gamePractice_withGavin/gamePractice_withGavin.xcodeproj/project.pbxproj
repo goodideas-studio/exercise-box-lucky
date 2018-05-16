@@ -12,16 +12,33 @@
 		A5AC017420ABC1FC008ADE9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AC017220ABC1FC008ADE9F /* Main.storyboard */; };
 		A5AC017620ABC201008ADE9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AC017520ABC201008ADE9F /* Assets.xcassets */; };
 		A5AC017920ABC201008ADE9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AC017720ABC201008ADE9F /* LaunchScreen.storyboard */; };
+		A5AC018320ABC632008ADE9F /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC018220ABC632008ADE9F /* DiceViewController.swift */; };
+		A5AC018620ABC66A008ADE9F /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC018520ABC66A008ADE9F /* UIButton.swift */; };
+		A5AC018820ABC9F6008ADE9F /* Quiz1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC018720ABC9F5008ADE9F /* Quiz1ViewController.swift */; };
+		A5AC018C20ABCA02008ADE9F /* Quiz2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC018920ABCA01008ADE9F /* Quiz2ViewController.swift */; };
+		A5AC018D20ABCA02008ADE9F /* Quiz3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC018A20ABCA01008ADE9F /* Quiz3ViewController.swift */; };
+		A5AC018E20ABCA02008ADE9F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC018B20ABCA01008ADE9F /* ResultViewController.swift */; };
+		A5AC019220ABD5CE008ADE9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC019120ABD5CE008ADE9F /* HomeViewController.swift */; };
+		A5AC019420ABF0B9008ADE9F /* Notification_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC019320ABF0B9008ADE9F /* Notification_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A5AC016B20ABC1FC008ADE9F /* gamePractice_withGavin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gamePractice_withGavin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AC016B20ABC1FC008ADE9F /* playgound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playgound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AC016E20ABC1FC008ADE9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5AC017020ABC1FC008ADE9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5AC017320ABC1FC008ADE9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5AC017520ABC201008ADE9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5AC017820ABC201008ADE9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5AC017A20ABC201008ADE9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5AC018220ABC632008ADE9F /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		A5AC018520ABC66A008ADE9F /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		A5AC018720ABC9F5008ADE9F /* Quiz1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz1ViewController.swift; sourceTree = "<group>"; };
+		A5AC018920ABCA01008ADE9F /* Quiz2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz2ViewController.swift; sourceTree = "<group>"; };
+		A5AC018A20ABCA01008ADE9F /* Quiz3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz3ViewController.swift; sourceTree = "<group>"; };
+		A5AC018B20ABCA01008ADE9F /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A5AC018F20ABCF2E008ADE9F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A5AC019120ABD5CE008ADE9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A5AC019320ABF0B9008ADE9F /* Notification_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +55,7 @@
 		A5AC016220ABC1FC008ADE9F = {
 			isa = PBXGroup;
 			children = (
+				A5AC018F20ABCF2E008ADE9F /* README.md */,
 				A5AC016D20ABC1FC008ADE9F /* gamePractice_withGavin */,
 				A5AC016C20ABC1FC008ADE9F /* Products */,
 			);
@@ -46,7 +64,7 @@
 		A5AC016C20ABC1FC008ADE9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5AC016B20ABC1FC008ADE9F /* gamePractice_withGavin.app */,
+				A5AC016B20ABC1FC008ADE9F /* playgound.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,9 +72,17 @@
 		A5AC016D20ABC1FC008ADE9F /* gamePractice_withGavin */ = {
 			isa = PBXGroup;
 			children = (
+				A5AC019020ABD5BF008ADE9F /* Home */,
+				A5AC018420ABC65D008ADE9F /* Extension */,
+				A5AC018120ABC5E4008ADE9F /* game_Gavin */,
+				A5AC018020ABC5D2008ADE9F /* game_Morris */,
 				A5AC016E20ABC1FC008ADE9F /* AppDelegate.swift */,
 				A5AC017020ABC1FC008ADE9F /* ViewController.swift */,
 				A5AC017220ABC1FC008ADE9F /* Main.storyboard */,
+				A5AC018720ABC9F5008ADE9F /* Quiz1ViewController.swift */,
+				A5AC018920ABCA01008ADE9F /* Quiz2ViewController.swift */,
+				A5AC018A20ABCA01008ADE9F /* Quiz3ViewController.swift */,
+				A5AC018B20ABCA01008ADE9F /* ResultViewController.swift */,
 				A5AC017520ABC201008ADE9F /* Assets.xcassets */,
 				A5AC017720ABC201008ADE9F /* LaunchScreen.storyboard */,
 				A5AC017A20ABC201008ADE9F /* Info.plist */,
@@ -64,12 +90,44 @@
 			path = gamePractice_withGavin;
 			sourceTree = "<group>";
 		};
+		A5AC018020ABC5D2008ADE9F /* game_Morris */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = game_Morris;
+			sourceTree = "<group>";
+		};
+		A5AC018120ABC5E4008ADE9F /* game_Gavin */ = {
+			isa = PBXGroup;
+			children = (
+				A5AC018220ABC632008ADE9F /* DiceViewController.swift */,
+			);
+			path = game_Gavin;
+			sourceTree = "<group>";
+		};
+		A5AC018420ABC65D008ADE9F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5AC018520ABC66A008ADE9F /* UIButton.swift */,
+				A5AC019320ABF0B9008ADE9F /* Notification_Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A5AC019020ABD5BF008ADE9F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A5AC019120ABD5CE008ADE9F /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5AC016A20ABC1FC008ADE9F /* gamePractice_withGavin */ = {
+		A5AC016A20ABC1FC008ADE9F /* playgound */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5AC017D20ABC201008ADE9F /* Build configuration list for PBXNativeTarget "gamePractice_withGavin" */;
+			buildConfigurationList = A5AC017D20ABC201008ADE9F /* Build configuration list for PBXNativeTarget "playgound" */;
 			buildPhases = (
 				A5AC016720ABC1FC008ADE9F /* Sources */,
 				A5AC016820ABC1FC008ADE9F /* Frameworks */,
@@ -79,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = gamePractice_withGavin;
+			name = playgound;
 			productName = gamePractice_withGavin;
-			productReference = A5AC016B20ABC1FC008ADE9F /* gamePractice_withGavin.app */;
+			productReference = A5AC016B20ABC1FC008ADE9F /* playgound.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5AC016A20ABC1FC008ADE9F /* gamePractice_withGavin */,
+				A5AC016A20ABC1FC008ADE9F /* playgound */,
 			);
 		};
 /* End PBXProject section */
@@ -136,7 +194,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5AC017120ABC1FC008ADE9F /* ViewController.swift in Sources */,
+				A5AC018320ABC632008ADE9F /* DiceViewController.swift in Sources */,
+				A5AC018C20ABCA02008ADE9F /* Quiz2ViewController.swift in Sources */,
+				A5AC018E20ABCA02008ADE9F /* ResultViewController.swift in Sources */,
 				A5AC016F20ABC1FC008ADE9F /* AppDelegate.swift in Sources */,
+				A5AC019220ABD5CE008ADE9F /* HomeViewController.swift in Sources */,
+				A5AC018D20ABCA02008ADE9F /* Quiz3ViewController.swift in Sources */,
+				A5AC018620ABC66A008ADE9F /* UIButton.swift in Sources */,
+				A5AC019420ABF0B9008ADE9F /* Notification_Extension.swift in Sources */,
+				A5AC018820ABC9F6008ADE9F /* Quiz1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5AC017D20ABC201008ADE9F /* Build configuration list for PBXNativeTarget "gamePractice_withGavin" */ = {
+		A5AC017D20ABC201008ADE9F /* Build configuration list for PBXNativeTarget "playgound" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5AC017E20ABC201008ADE9F /* Debug */,
