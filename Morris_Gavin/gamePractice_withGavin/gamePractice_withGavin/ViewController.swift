@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonOutlet.layer.cornerRadius = 10
-        
     }
     
     override func didReceiveMemoryWarning() {
