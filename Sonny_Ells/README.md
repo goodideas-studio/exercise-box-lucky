@@ -5,7 +5,7 @@
 1. 首頁 可以顯示兩個遊戲的 "遊戲次數" & "最高分數"
 2. 可由首頁進入遊戲
 
-![App screen](App screen.png)
+![App screen](App_screen.png)
 
 
 
