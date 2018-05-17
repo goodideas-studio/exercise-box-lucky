@@ -34,7 +34,8 @@ class ViewController: UIViewController {
     
     @IBAction func backBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-        if score >= heightScore{
+        var oldHighestScore = userDefault.integer(forKey: "GNHeightScore")
+        if score >= oldHighestScore {
             heightScore = score
             userDefault.set(heightScore, forKey: "GNHeightScore")
             print("GNHeightScore : \(heightScore)")
