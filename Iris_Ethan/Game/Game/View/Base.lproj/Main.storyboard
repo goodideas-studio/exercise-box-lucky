@@ -109,6 +109,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHV-ml-6Xv">
+                                <rect key="frame" x="334" y="622" width="28" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-home_filled"/>
+                                <connections>
+                                    <segue destination="hht-h0-dMq" kind="show" id="SNB-Bv-hIl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -183,7 +191,6 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="test:" destination="hht-h0-dMq" eventType="touchUpInside" id="FEe-sz-0ae"/>
                                     <segue destination="woe-8U-jom" kind="show" id="tih-mb-j5m"/>
                                 </connections>
                             </button>
@@ -207,7 +214,6 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="test:" destination="hht-h0-dMq" eventType="touchUpInside" id="3js-yY-Krg"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Bqy-Xu-Sof"/>
                                 </connections>
                             </button>
@@ -471,6 +477,7 @@
         <image name="annie-spratt-277569-unsplash" width="4715" height="2953"/>
         <image name="brigitte-tohm-172190-unsplash" width="3648" height="5472"/>
         <image name="icons8-cards-48" width="48" height="48"/>
+        <image name="icons8-home_filled" width="25" height="25"/>
         <image name="icons8-west_direction" width="24" height="24"/>
         <image name="table" width="768" height="1024"/>
         <image name="table拷貝" width="768" height="605"/>

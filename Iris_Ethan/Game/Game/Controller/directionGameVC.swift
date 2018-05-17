@@ -31,6 +31,7 @@ class directionGameVC: UIViewController {
     var userDefault = UserDefaults.standard
     var gamePlay = 0
     var maxScore = 0
+    var storedGamePlay = 0
     
     //記得圖片一開始位置
     var imageOriginCoordinate:CGFloat?
@@ -48,11 +49,14 @@ class directionGameVC: UIViewController {
     }
     
 
-    
+    @IBOutlet weak var imageView: UIImageView!
     //時間
     @IBOutlet weak var timeLabel: UILabel!
     //分數表
     @IBOutlet weak var scoreLabel: UILabel!
+    
+
+    
     //裡面的圖案種類
     let arrowArray = ["blueUp","blueDown","blueRight","blueLeft","redUp","redDown","redLeft","redRight"]
     //手勢的方向
@@ -65,6 +69,7 @@ class directionGameVC: UIViewController {
         }
     }
     
+    // MARK: - Game rule
     func rule(direction:String,gestureDirection:String){
         if self.isGamePlaying{
             //記得原本的位置
@@ -106,7 +111,7 @@ class directionGameVC: UIViewController {
     }
     
     
-    
+    // MARK: - Reset game
     @IBAction func reset(_ sender: UIButton) {
         let alert = UIAlertController(title: "遊戲將重新開始", message: "按下確定後重新開始", preferredStyle: .alert)
         let action = UIAlertAction(title: "確定", style: .default) { (action) in
@@ -120,11 +125,13 @@ class directionGameVC: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    // MARK: - Gesture recognize
     @IBAction func swipeRight(_ sender: UISwipeGestureRecognizer) {
         self.gestureDirection = "Right"
         rule(direction: self.direction, gestureDirection: self.gestureDirection)
     }
     
+ 
     @IBAction func swipeUp(_ sender: UISwipeGestureRecognizer) {
         self.gestureDirection = "Up"
         rule(direction: self.direction, gestureDirection: self.gestureDirection)
@@ -141,8 +148,8 @@ class directionGameVC: UIViewController {
     }
     
     
-    @IBOutlet weak var imageView: UIImageView!
-    
+
+    //MARK: - Timer & Game Record
     //倒數計時方法
     @objc func countDown(){
         if self.counter > 0{
@@ -155,14 +162,25 @@ class directionGameVC: UIViewController {
                     self.timer?.invalidate()
                     self.counter = 20
                     
-                    self.gamePlay += 1
-                    if self.totalScore > self.userDefault.integer(forKey: "directionMaxScore") {
-                       self.userDefault.set(self.totalScore, forKey: "directionMaxScore")
+                    
+                    
+                    if self.gamePlay <= self.userDefault.integer(forKey: "directionGamePlay") {
+                        self.gamePlay += 1
+                        self.storedGamePlay = self.userDefault.integer(forKey: "directionGamePlay") + self.gamePlay
+                        self.userDefault.set(self.storedGamePlay, forKey: "directionGamePlay")
+                    }
+                 
+
+                    
+                    if self.totalScore >  self.userDefault.integer(forKey: "directionMaxScore") {
+                        self.maxScore = self.totalScore
+                        self.userDefault.set(self.maxScore, forKey: "directionMaxScore")
+                    
                         
                     }
-                    self.userDefault.set(self.gamePlay, forKey: "directionGamePlay")
+              
                     print(self.userDefault.integer(forKey: "directionGamePlay"))
-print(self.userDefault.integer(forKey: "directionMaxScore"))
+                    print(self.userDefault.integer(forKey: "directionMaxScore"))
                 }
                 alert.addAction(action)
                 self.present(alert, animated: true, completion: nil)
@@ -172,10 +190,12 @@ print(self.userDefault.integer(forKey: "directionMaxScore"))
         }
     }
     
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.userDefault.set(self.gamePlay, forKey: "directionMaxScore")
+        self.userDefault.integer(forKey: "directionGamePlay")
+        self.userDefault.integer(forKey: "directionMaxScore")
     }
     
     override func viewDidAppear(_ animated: Bool) {
