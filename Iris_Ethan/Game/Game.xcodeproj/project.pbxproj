@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC4A041F20ABD67C00BEC1FF /* IndexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4A041E20ABD67C00BEC1FF /* IndexVC.swift */; };
 		AC4A042120AC033400BEC1FF /* directionGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4A042020AC033400BEC1FF /* directionGameVC.swift */; };
+		AC6ABF6820B2689200BDAA4B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AC6ABF6720B2689200BDAA4B /* README.md */; };
 		ACB66FFE20AA71F4009B6A16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB66FFD20AA71F4009B6A16 /* AppDelegate.swift */; };
 		ACB6700020AA71F4009B6A16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB66FFF20AA71F4009B6A16 /* ViewController.swift */; };
 		ACB6700320AA71F4009B6A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB6700120AA71F4009B6A16 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		ACB6701320AA71F6009B6A16 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6701220AA71F6009B6A16 /* GameTests.swift */; };
 		ACB6701E20AA71F6009B6A16 /* GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6701D20AA71F6009B6A16 /* GameUITests.swift */; };
 		ACB6702C20AA8706009B6A16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACB6702B20AA86F6009B6A16 /* Default-568h@2x.png */; };
-		ACB6702F20AA87E0009B6A16 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB6702E20AA87DF009B6A16 /* Billabong.ttf */; };
 		ACB6703120AA894E009B6A16 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6703020AA894E009B6A16 /* GameVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		AC4A041E20ABD67C00BEC1FF /* IndexVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexVC.swift; sourceTree = "<group>"; };
 		AC4A042020AC033400BEC1FF /* directionGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = directionGameVC.swift; sourceTree = "<group>"; };
-		AC92A5A620ACB7EB007A67F0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AC6ABF6720B2689200BDAA4B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ACB66FFA20AA71F4009B6A16 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB66FFD20AA71F4009B6A16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACB66FFF20AA71F4009B6A16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,6 @@
 		ACB6701D20AA71F6009B6A16 /* GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUITests.swift; sourceTree = "<group>"; };
 		ACB6701F20AA71F6009B6A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACB6702B20AA86F6009B6A16 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		ACB6702E20AA87DF009B6A16 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Billabong.ttf; path = ../../../Downloads/Billabong.ttf; sourceTree = "<group>"; };
 		ACB6703020AA894E009B6A16 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,9 +131,8 @@
 				AC92A5A820ACBC0A007A67F0 /* Controller */,
 				AC92A5A720ACBBEE007A67F0 /* View */,
 				ACB6700420AA71F5009B6A16 /* Assets.xcassets */,
-				ACB6702E20AA87DF009B6A16 /* Billabong.ttf */,
 				ACB66FFD20AA71F4009B6A16 /* AppDelegate.swift */,
-				AC92A5A620ACB7EB007A67F0 /* README.md */,
+				AC6ABF6720B2689200BDAA4B /* README.md */,
 				ACB6700920AA71F6009B6A16 /* Info.plist */,
 			);
 			path = Game;
@@ -264,8 +262,8 @@
 			files = (
 				ACB6700820AA71F6009B6A16 /* LaunchScreen.storyboard in Resources */,
 				ACB6702C20AA8706009B6A16 /* Default-568h@2x.png in Resources */,
+				AC6ABF6820B2689200BDAA4B /* README.md in Resources */,
 				ACB6700520AA71F5009B6A16 /* Assets.xcassets in Resources */,
-				ACB6702F20AA87E0009B6A16 /* Billabong.ttf in Resources */,
 				ACB6700320AA71F4009B6A16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

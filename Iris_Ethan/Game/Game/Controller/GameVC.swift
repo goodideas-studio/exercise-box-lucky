@@ -26,6 +26,7 @@ class GameVC: UIViewController {
     
     var bankerCard: Int!
     var playerCard: Int!
+
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var resultView: UIView!
@@ -62,9 +63,9 @@ class GameVC: UIViewController {
                 resultView.isHidden = false
                 tableView.isUserInteractionEnabled = false
                 
-                UIView.animate(withDuration: 1, delay: 0, options: .curveEaseIn, animations: {
+                UIView.animate(withDuration: 2, delay: 0, options: .curveLinear , animations: {
                     
-                    self.resultView.frame.origin.y = UIScreen.main.bounds.height / 2 - (self.resultView.bounds.height / 2)
+                    self.resultView.transform = CGAffineTransform.identity
                     
                 }, completion: nil)
             }
@@ -83,9 +84,13 @@ class GameVC: UIViewController {
         judge()
         
         UIView.animate(withDuration: 0.5, animations: {
-            self.playerReadyImage.frame.origin.x = (self.playerReadyImage.frame.origin.x * 3)
+           print(self.playerReadyImage.frame.origin.x)
+//            self.playerReadyImage.frame.origin.x = self.playerReadyImage.frame.origin.x + 50
+            self.playerReadyImage.transform = CGAffineTransform(translationX: 1000, y: 0)
+            
         }) { (_) in
-            self.playerReadyImage.frame.origin.x = 138
+            self.playerReadyImage.transform = CGAffineTransform.identity
+//            self.playerReadyImage.center.x = self.gamerCardPositionCenterX
             self.secondInning()
         }
         
@@ -98,9 +103,12 @@ class GameVC: UIViewController {
         judge()
         
         UIView.animate(withDuration: 0.5, animations: {
-            self.playerReadyImage.frame.origin.x = -(self.playerReadyImage.frame.origin.x * 3)
+//            self.playerReadyImage.frame.origin.x = -(self.playerReadyImage.frame.origin.x * 3)
+            self.playerReadyImage.transform = CGAffineTransform(translationX: -1000, y: 0)
         }) { (_) in
-            self.playerReadyImage.frame.origin.x = 138
+            // identity 復原到一開始的位置
+              self.playerReadyImage.transform = CGAffineTransform.identity
+//            self.playerReadyImage.frame.origin.x = 138
             self.secondInning()
         }
 
@@ -113,9 +121,11 @@ class GameVC: UIViewController {
         print("Up")
         judge()
         UIView.animate(withDuration: 0.5, animations: {
-            self.playerReadyImage.frame.origin.y = -self.playerReadyImage.frame.origin.y
+//            self.playerReadyImage.frame.origin.y = -self.playerReadyImage.frame.origin.y
+            self.playerReadyImage.transform = CGAffineTransform(translationX: 0, y: -1000)
         }) { (_) in
-            self.playerReadyImage.frame.origin.y = 456
+//            self.playerReadyImage.frame.origin.y = 456
+            self.playerReadyImage.transform = CGAffineTransform.identity
             self.secondInning()
         }
        
@@ -126,9 +136,11 @@ class GameVC: UIViewController {
         print("Down")
         judge()
         UIView.animate(withDuration: 0.5, animations: {
-            self.playerReadyImage.frame.origin.y = self.playerReadyImage.frame.origin.y * 3
+//            self.playerReadyImage.frame.origin.y = self.playerReadyImage.frame.origin.y * 3
+            self.playerReadyImage.transform = CGAffineTransform(translationX: 0, y: 1000)
         }) { (_) in
-            self.playerReadyImage.frame.origin.y = 456
+//            self.playerReadyImage.frame.origin.y = 456
+            self.playerReadyImage.transform = CGAffineTransform.identity
             self.secondInning()
         }
     }
@@ -241,9 +253,9 @@ class GameVC: UIViewController {
               //  gamblingChipsImage.image = UIImage(named: "icons8-chip")
                 scoreView.isHidden = false
                 tableView.isUserInteractionEnabled = false
-                UIView.animate(withDuration: 1, delay: 0, options: .curveEaseIn, animations: {
+                UIView.animate(withDuration: 3, delay: 0, options: .curveEaseIn, animations: {
                     
-                    self.scoreView.frame.origin.y = UIScreen.main.bounds.height / 2 - (self.scoreView.bounds.height / 2)
+                    self.scoreView.transform = CGAffineTransform.identity
                     
                 }, completion: nil)
     }
@@ -278,6 +290,9 @@ class GameVC: UIViewController {
         gamblingChipsImage.image = UIImage(named: "icons8-chip")
         resultView.isHidden = true
         scoreView.isHidden = true
+        
+        resultView.transform = CGAffineTransform(translationX: 0, y: 1000)
+        scoreView.transform = CGAffineTransform(translationX: 0, y: 1000)
     }
     
     
